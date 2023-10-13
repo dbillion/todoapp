@@ -7,6 +7,7 @@ import { ProductsModule } from './products/products.module';
 import { CopyrightDirective } from './copyright.directive';
 import { NumericDirective } from './numeric.directive';
 import { ProductHostDirective } from './product-host.directive';
+import { KeyLoggerComponent } from './key-logger/key-logger.component';
 
 
 
@@ -16,6 +17,7 @@ import { ProductHostDirective } from './product-host.directive';
     CopyrightDirective,
     NumericDirective,
     ProductHostDirective,
+    KeyLoggerComponent,
 
 
 
