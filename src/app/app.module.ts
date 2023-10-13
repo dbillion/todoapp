@@ -7,7 +7,6 @@ import { ProductsModule } from './products/products.module';
 import { CopyrightDirective } from './copyright.directive';
 import { NumericDirective } from './numeric.directive';
 import { ProductHostDirective } from './product-host.directive';
-import { FavoritesComponent } from './favorites/favorites.component';
 
 
 
@@ -17,7 +16,8 @@ import { FavoritesComponent } from './favorites/favorites.component';
     CopyrightDirective,
     NumericDirective,
     ProductHostDirective,
-    FavoritesComponent,
+
+
 
   ],
   imports: [
