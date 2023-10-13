@@ -3,10 +3,12 @@ import { AfterViewInit, Component, ViewChild, ChangeDetectorRef } from '@angular
 import { ProductDetailComponent } from '../product-detail/product-detail.component';
 
 import { Product } from '../product';
+import { ProductsService } from '../products.service';
 @Component({
   selector: 'app-product-list',
   templateUrl: './product-list.component.html',
-  styleUrls: ['./product-list.component.scss']
+  styleUrls: ['./product-list.component.scss'],
+  providers: [ProductsService]
 })
 export class ProductListComponent implements AfterViewInit{
 

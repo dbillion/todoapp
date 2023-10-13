@@ -3,8 +3,6 @@
 <li *ngFor="let product of products | sort; let i=index" (click)="selectedProduct =
 product">
 {{product.name | uppercase}}
-{{product.name | lowercase}}
-</li>
 </ul>
 <app-product-detail
 *ngIf="selectedProduct; else noProduct"
@@ -13,5 +11,9 @@ product">
 </app-product-detail>
 <ng-template #noProduct>
 <p>No product selected!</p>
-</ng-template
->
+<!-- <input appNumeric /> -->
+</ng-template>
+
+
+<h3>Offers</h3>
+<ng-template  appProductHost></ng-template>
