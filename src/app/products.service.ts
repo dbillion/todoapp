@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Product } from './product';
+import { Observable, of ,switchMap} from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
@@ -7,8 +8,7 @@ export class ProductsService {
 
   constructor() { }
 
-  getProducts(): Product[] {
-    return [
+  private products = [
     {
     name: 'Webcam',
     price: 100
@@ -17,11 +17,18 @@ export class ProductsService {
     name:
     'Microphone',
     price: 200
-    },
-    {
-    name: 'Wireless keyboard',
-    price: 85
-    }
-    ];
-    }
+},
+{
+name: 'Wireless keyboard',
+price: 85
+}
+];
+
+
+    getProducts(): Observable<Product[]> {
+      return of(this.products);
+      }
+
+  
+
 }
